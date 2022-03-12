@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
+function number() {
+      var number = 123;
+      var string = "shizo";
+      const arrays = ['data', 'science', 'engineer'];
+      const person = {
+        name : 'Tuvshuu',
+        age : 19,
+        job : 'data engineer'
+      };
+      var student1 = {
+        name :'shizo',
+        sclass:'2',
+        age : 19,
+      }
+      const name = 'age';
+      delete student1[name];
+      console.log(student1);
+
+      var student2 = {
+        name : 'shizoo',
+        sclass : 2,
+        age : 19,
+      }
+      var len1 = student2.length;
+      var city = ["London", "UB", 'Seoul', 'Berlin'];
+      document.getElementById("myText").innerHTML = number;
+      document.getElementById("myString").innerHTML = string;
+      document.getElementById("arrayss").innerHTML = arrays[2];
+      document.getElementById("jobb").innerHTML = person['name'];
+      document.getElementById('bool').innerHTML = Boolean(3<4);
+      document.getElementById('hw1').innerHTML = student1;
+      document.getElementById('hw2').innerHTML = Object.keys(student2).length;
+      document.getElementById('hw3').innerHTML = city[Object.keys(city)[Object.keys(city).length-1]];
+    }
+</script>
+<body onload="number()">
+  <h1>"toon utga: " <span id="myText"></span></h1>
+</body>
+
+<body onload = "string()">
+  <h1>string utga:  <span id="myString"></span></h1>
+</body>
+
+<body onload="number()">
+  <h2>"array utga: " <span id='arrayss'></span></h2>
+  <h3>"job: " <span id='jobb'></span></h3>
+  <h4>"you know what: " <span id='bool'></span></h4>
+  <h5>"hw1: " <span id='hw1'></span></h5>
+  <h5>"hw2: " <span id='hw2'></span></h5>
+  <h6>"hw3: " <span id='hw3'></span></h6>
+</body>
+
+
+  
+</body>
+</html>
